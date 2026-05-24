@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import profileImg from './assets/profile.png';
 import { 
   GraduationCap, 
   Briefcase, 
@@ -248,11 +249,9 @@ function HomeView({ handleTabChange }) {
       >
         <div className="absolute inset-0 bg-gradient-to-tr from-brand-500 to-orange-300 rounded-full blur-2xl opacity-20 animate-pulse"></div>
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-brand-500 via-orange-400 to-brand-100 shadow-2xl">
-          {/* Custom SVG Tech Avatar Illustration */}
+          {/* Real Profile Photo */}
           <div className="w-full h-full rounded-full bg-white overflow-hidden flex items-center justify-center relative">
-            <svg className="w-4/5 h-4/5 text-brand-500" viewBox="0 0 100 100" fill="currentColor">
-              <path d="M50 15a18 18 0 1 0 0 36 18 18 0 0 0 0-36zm-24 50c0-9.9 8.1-18 18-18h12c9.9 0 18 8.1 18 18v6H26v-6z" />
-            </svg>
+            <img src={profileImg} alt="Anugu Baavith Reddy" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-500/10 to-transparent"></div>
           </div>
         </div>
@@ -461,8 +460,19 @@ function ProjectsView() {
         'Implemented real-time face matching, image processing workflows, and facial embedding comparison.',
         'Designed a scalable detection pipeline to reduce manual verification efforts and improve identification speed.'
       ],
-      link: '#',
-      linkText: 'Live site here'
+      link: 'https://github.com/Baavith',
+      linkText: 'View on GitHub'
+    },
+    {
+      title: 'TalentScout – AI-Powered Hiring Assistant Chatbot',
+      tech: ['Python', 'Streamlit', 'Groq API', 'Llama 3.3', 'NLP'],
+      details: [
+        'Developed a conversational AI screening chatbot conducting initial technical screening for software candidate placement.',
+        'Implemented a Python-controlled state machine ensuring strict conversational transitions and isolated API calls for question generation and real-time sentiment analysis.',
+        'Deployed on Streamlit with a clean UI, custom CSS, stateful session handling, and robust JSON parsing error handling.'
+      ],
+      link: 'https://github.com/Baavith',
+      linkText: 'View on GitHub'
     },
     {
       title: 'ATLAS – AI-Powered Career Guidance System',
@@ -472,8 +482,8 @@ function ProjectsView() {
         'Implemented preprocessing, feature logic, and evaluation pipelines, improving recommendation accuracy by 12%.',
         'Enhancing with Masters, country, scholarship, and university recommendation features.'
       ],
-      link: '#',
-      linkText: 'Download Link'
+      link: 'https://github.com/Baavith',
+      linkText: 'View on GitHub'
     },
     {
       title: 'Log Monitoring & Data Visualization System',
@@ -483,8 +493,30 @@ function ProjectsView() {
         'Implemented real-time log aggregation, dashboard visualization, and automated alerts.',
         'Observed system behavior using Loki log flows and Prometheus metrics.'
       ],
-      link: '#',
-      linkText: 'Observability Stack'
+      link: 'https://github.com/Baavith',
+      linkText: 'View Observability Stack'
+    },
+    {
+      title: 'Medicine Recommendation System',
+      tech: ['Python', 'Pandas', 'Scikit-learn', 'Collaborative Filtering'],
+      details: [
+        'Developed an intelligent recommendation engine using collaborative filtering to generate personalized medicine suggestions.',
+        'Conducted robust data cleaning, feature engineering, and similarity-based matching to maximize recommendation relevance.',
+        'Designed an automated evaluation pipeline to validate matching quality and performance metrics.'
+      ],
+      link: 'https://github.com/Baavith',
+      linkText: 'View on GitHub'
+    },
+    {
+      title: 'Handwritten Digit Recognition System',
+      tech: ['Python', 'TensorFlow', 'Keras', 'CNN', 'MNIST'],
+      details: [
+        'Conducted data exploration, preprocessing, and augmentation on the MNIST handwritten digit image dataset.',
+        'Built and trained a Convolutional Neural Network (CNN) achieving a 98% validation accuracy.',
+        'Implemented hyperparameter tuning and dropout regularization to optimize training and reduce model overfitting.'
+      ],
+      link: 'https://github.com/Baavith',
+      linkText: 'View on GitHub'
     }
   ];
 
@@ -668,8 +700,8 @@ function ContactView() {
             </span>
             <div>
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Email Me</p>
-              <a href="mailto:baavithreddy04@gmail.com" className="text-gray-700 hover:text-brand-500 font-bold transition-colors">
-                baavithreddy04@gmail.com
+              <a href="mailto:baavithreddyanugu07@gmail.com" className="text-gray-700 hover:text-brand-500 font-bold transition-colors">
+                baavithreddyanugu07@gmail.com
               </a>
             </div>
           </div>
@@ -680,8 +712,8 @@ function ContactView() {
             </span>
             <div>
               <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">Call Me</p>
-              <a href="tel:+919100079321" className="text-gray-700 hover:text-brand-500 font-bold transition-colors">
-                +91-9100079321
+              <a href="tel:+919100793219" className="text-gray-700 hover:text-brand-500 font-bold transition-colors">
+                +91-9100793219
               </a>
             </div>
           </div>
