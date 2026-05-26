@@ -587,6 +587,18 @@ function ExperienceView() {
       ]
     },
     {
+      role: 'AIML Intern',
+      org: 'Elevate Labs',
+      period: '01 2024 – 04 2024',
+      location: 'Hyderabad, India',
+      details: [
+        'Designed and executed robust data preprocessing pipelines to clean, normalize, and tokenize unstructured user inputs for NLP recommendation models.',
+        'Developed and optimized classification algorithms for the AI Career Counsellor project using Python, Pandas, Scikit-learn, and NLP preprocessing.',
+        'Conducted extensive performance evaluations, hyperparameter tuning, and error analyses to boost recommendation accuracy by 12%.',
+        'Gained hands-on experience designing end-to-end Machine Learning pipelines and packing model artifacts into deployment-ready AI solutions.'
+      ]
+    },
+    {
       role: 'Team Lead (Internship)',
       org: 'Veenero Solutions',
       period: '11 2023 – 01 2024',
@@ -746,7 +758,7 @@ function ContactView() {
               <GithubIcon size={28} />
             </a>
             <a 
-              href="https://linkedin.com/in/Baavith" 
+              href="https://www.linkedin.com/in/baavith-reddy-anugu-062655317/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-4 bg-white hover:bg-brand-500 hover:text-white text-gray-700 border border-brand-100 hover:border-brand-500 rounded-2xl transition-all shadow-sm hover:shadow-md hover:-translate-y-0.5 flex items-center justify-center"
